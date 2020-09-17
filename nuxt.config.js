@@ -95,13 +95,12 @@ export default {
   build: {
     babel: {
       presets({ isServer }) {
-        return [
-          [
-            "@nuxt/babel-preset-app", { loose: true }
-          ]
-        ]
-      }
-    }
+        return [['@nuxt/babel-preset-app', { loose: true }]]
+      },
+    },
   },
   srcDir: 'src',
+  env: {
+    apiKey: process.env.API_KEY,
+  },
 }

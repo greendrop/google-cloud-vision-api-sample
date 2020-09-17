@@ -44,6 +44,11 @@ export default class DefaultLayout extends Vue {
       title: 'ホーム',
       to: '/',
     },
+    {
+      icon: 'fas fa-file-alt',
+      title: 'TEXT_DETECTION',
+      to: '/text_detection',
+    },
   ]
 }
 </script>
